@@ -219,7 +219,7 @@ func (h *HostInfo) DataCenter() string {
 	return h.dataCenter
 }
 
-func (h *HostInfo) setDataCenter(dataCenter string) *HostInfo {
+func (h *HostInfo) SetDataCenter(dataCenter string) *HostInfo {
 	h.mu.Lock()
 	defer h.mu.Unlock()
 	h.dataCenter = dataCenter
